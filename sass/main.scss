@@ -1,0 +1,12 @@
+// reset css
+@import "partials/reset";
+
+// mixins
+@import "modules/mixins";
+
+// variables and all
+@import "modules/variable";
+@import "modules/all";
+
+// partials 
+@import "partials/header-main";
