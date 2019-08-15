@@ -1,0 +1,190 @@
+.main {
+    position: relative;
+    min-height: 100vh;
+    display: block;
+
+    &__text {
+        position: relative;
+        z-index: 9999;
+        top: -5rem;
+
+        &__primary {
+            color: #fff;
+            font-size: 3.3rem;
+            text-align: center;
+            text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
+        }
+
+        &__sub-text {
+            color: #fff;
+            font-size: 4.5rem;
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
+        }
+
+        &__sub-text-2 {
+            color: #fff;
+            font-size: 2.4rem;
+            text-align: center;
+            text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
+        }
+    }
+    
+    &__logo {
+        position: relative;
+        z-index: 9999;
+        text-align: center;
+        top: .3rem;
+
+        &__image {
+            width: 48%;
+            
+        }
+    }
+
+    &__ul {
+        position: relative;
+        z-index: 9999;
+        display: flex; 
+        bottom: 37rem;
+        left: 3rem;
+
+        &__playstation {
+
+            &__logo {
+                max-width: 12rem;
+            }
+        }
+
+        &__xbox {
+
+            &__logo {
+                max-width: 12rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+        }
+
+        &__steam {
+            
+
+            &__logo {
+                max-width: 9rem;
+           
+            }
+        }
+    }
+
+    &__feature-stories {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        left: 15rem;
+        top: 60rem;
+        
+
+        &__left-box {
+            position: relative;
+            display: inline-block;
+            border: 5px #297499 solid;
+            max-width: 90%;
+           
+            &__anchor {
+                position: relative;
+                display: block;
+                left: -13rem;
+                max-width: 100%;
+                &__figure {
+
+                    img {
+                        max-width: 50%;
+                        height: auto;
+                    }
+                }
+
+                &__content {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 2.3rem;
+                    top: -10rem;
+                    right: -25rem;
+                    text-align: center;
+                    width: 90%;
+
+                    p {
+                        padding: 12rem;
+                        text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
+                    }
+                    
+                }
+            }
+
+        }
+
+        &__left-box:hover {
+            border: 5px solid #73c6ee;
+            transition: all .7s;
+        }
+
+        &__right-box {
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            border: 5px #297499 solid;
+            left: 10rem;
+
+            &__anchor {
+               position: relative;
+               display: block;
+        
+                &__figure {
+
+                    img {
+                        position: relative;
+                        left: -13rem;
+                        max-width: 50%;
+                        height: auto;
+                    }
+                }
+
+                &__content {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 2.3rem;
+                    text-align: center;
+                    width: 90%;
+                    left: 15rem;
+                    top: -8rem;
+
+                    p {
+                        padding: 12rem;
+                        text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
+                        
+                    }
+                }
+            }
+        }
+        &__right-box:hover {
+            border: 5px solid #73c6ee;
+            transition: all .7s;
+        }
+    }
+    
+}
+
+.main::after {
+    content: "";
+    background: url('../../images/monster-hunter-village.jpg');
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+

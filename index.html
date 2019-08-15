@@ -8,63 +8,73 @@
     <title>MONSTER HUNTER WORLD: ICEBORNE</title>
 </head>
 <body>
-    <header class="headerMain">
-        <img class="headerMain__img" src="./images/monster-hunter-village.jpg" alt="">
-        <div class="headerMain__container">
-                <div class="headerMain__container__console-logos">
-                    <img class="headerMain__container__console-logos__img-ps4" src="images/logo_ps4_white.png">
-                    <img class="headerMain__container__console-logos__img-xbox" src="images/logo_xboxone_white.png">
-                    <img class="headerMain__container__console-logos__img-steam" src="images/logo_steam_white.png">
-                </div>
-                
-            <nav class="headerMain__container__nav">
-              <div class="headerMain__container__nav__container">
-                <ul class="headerMain__container__nav__container__ul">
-                    <li class="headerMain__container__nav__container__preorder">Pre-Order Now</li>
-                    <li class="headerMain__container__nav__container__menu">
-                        Menu
-                        <svg height="3" width="200">
-                            <line x1="20" y1="0" x2="50" y2="0" style="stroke:#fff;stroke-width:3" />
-                        </svg>
-                        <svg height="14" width="200">
-                            <line x1="20" y1="0" x2="50" y2="0" style="stroke:#fff;stroke-width:3" />
-                        </svg>
-                    </li>
-                    <li class="headerMain__container__nav__container__after-content"></li>
-                </ul>
-              </div>
-            </nav>
-
-            <div class="headerMain__container__content">
-                
-                <img class="headerMain__container__content__logo" src="./images/logo_iceborne_l.png" alt="">
-
-                <div class="headerMain__container__content__text-box">
-                    <h3 class="headerMain__container__content__text-box__main-text">Massive Expansion for Monster Hunter: World!</h3>
-                    <h3 class="headerMain__container__content__text-box__sub-text">Releases on 9/6/2019!</h3>
-                    <p class="headerMain__container__content__text-box__second-sub-text">Steam version coming January 2020</p>
-                </div>
-
-                <div class="headerMain__container__content__news">
-                    <ul class="headerMain__container__content__news__ul">
-                        <li class="headerMain__container__content__news__ul__li-left-box">
-                            <a class="headerMain__container__content__news__ul__li-left-box__anchor" href="https://www.youtube.com/watch?v=UhbGtCHxE34" target="_blank">
-                            <img class="headerMain__container__content__news__ul__li-left-box__anchor__image" src="./images/promo_04.jpg" alt="developers">
-                            <p class="headerMain__container__content__news__ul__li-left-box__anchor__paragraph">The developers share the latest info about iceborne in the "Developer Diary Volume 1"!</p>
-                            </a>
-                        </li>
-
-                        <li class="headerMain__container__content__news__ul__li-right-box">
-                            <a class="headerMain__container__content__news__ul__li-right-box__anchor" href="#">
-                            <img class="headerMain__container__content__news__ul__li-right-box__anchor__image" src="./images/img_01.jpg" alt="">
-                            <p class="headerMain__container__content__news__ul__li-right-box__anchor__paragraph">Click to see the full product lineup and pre-order!
-                            </p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="header__fixed">
+        <div class="header__fixed__button-menu">
+            <p class="header__fixed__button-menu__paragraph">MENU</p>
+            <div class="header__fixed__button-menu__hamburger-menu">
+                <div class="header__fixed__button-menu__hamburger-menu__line"></div>
+                <div class="header__fixed__button-menu__hamburger-menu__line"></div>
             </div>
         </div>
     </header>
+    <div class="preorder-link">
+        <a class="preorder-link__anchor" href="#"><p class="preorder-link__anchor__text">Pre-Order Now!</p></a>
+    </div>
+
+    <div id="wrapper">
+        <main class="main">
+            <h1 class="main__logo">
+                <img src="./images/logo_iceborne_l.png" alt="" class="main__logo__image">
+                
+            </h1>
+            <ul class="main__ul">
+                <li class="main__ul__playstation">
+                    <img src="./images/logo_ps4_white.png" alt="playstation logo" class="main__ul__playstation__logo">
+                </li>
+                <li class="main__ul__xbox">
+                    <img src="./images/logo_xboxone_white.png" alt="xbox logo" class="main__ul__xbox__logo">
+                </li>
+                <li class="main__ul__steam">
+                    <img src="./images/logo_steam_white.png" alt="steam logo" class="main__ul__steam__logo">
+                </li>
+            </ul>
+            <div class="main__text">
+                <p class="main__text__primary">Massive Expansion for Monster Hunter: World</p>
+                <p class="main__text__sub-text">
+                    Releases on 9/6/2019!
+                </p>
+                <p class="main__text__sub-text-2">
+                    Steam version coming January 2020
+                </p>
+            </div>
+        </main>
+
+        <section id="news">
+            <ul class="main__feature-stories">
+                <li class="main__feature-stories__left-box">
+                    <a class="main__feature-stories__left-box__anchor" href="https://www.youtube.com/watch?v=UhbGtCHxE34" target="_blank">
+                        <figure class="main__feature-stories__left-box__anchor__figure">
+                            <img src="./images/promo_04.jpg" alt="">
+                        </figure>
+                        <div class="main__feature-stories__left-box__anchor__content">
+                            <p>The developers share the latest about Iceborne in the "Developer Diary Volume 1"!
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="main__feature-stories__right-box">
+                    <a class="main__feature-stories__right-box__anchor" href="#" target="_self"></a>
+                        <figure class="main__feature-stories__right-box__anchor__figure">
+                            <img src="./images/img_01.jpg" alt="">
+                        </figure>
+                    <div class="main__feature-stories__right-box__anchor__content">
+                        <p>
+                            Click to see the full product lineup and pre-order!
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>

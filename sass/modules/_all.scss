@@ -9,3 +9,20 @@
 html {
     font-size: $base-font-size;
 }
+
+body::before {
+    background-image: url('../../images/iceborne.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 40rem;
+    width: 50%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    opacity: .5;
+}

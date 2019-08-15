@@ -6,7 +6,9 @@
 
 // variables and all
 @import "modules/variable";
-@import "modules/all";
+@import "modules/all"; 
 
 // partials 
-@import "partials/header-main";
+@import "partials/header";
+@import "partials/main"; 
+@import "partials/link";

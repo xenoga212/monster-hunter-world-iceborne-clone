@@ -53,131 +53,196 @@ table {
 html {
   font-size: 62.5%; }
 
-.headerMain {
-  height: 100vh;
-  position: relative;
-  overflow: hidden; }
-  .headerMain__img {
-    width: 100vw;
-    opacity: .3;
+body::before {
+  background-image: url("../../images/iceborne.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-color: white;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 40rem;
+  width: 50%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  opacity: .5; }
+
+.header {
+  position: absolute;
+  z-index: 9999; }
+  .header__fixed__button-menu {
     position: absolute;
-    left: 0;
+    color: blue;
+    cursor: pointer;
+    position: fixed;
     top: 0;
-    height: auto; }
-  .headerMain__container {
-    position: relative;
-    z-index: 2; }
-    .headerMain__container__console-logos {
-      display: flex;
-      margin-top: 2.5rem;
-      margin-left: 2rem; }
-      .headerMain__container__console-logos__img-ps4 {
-        max-width: 18rem;
-        max-height: 3.7rem; }
-      .headerMain__container__console-logos__img-xbox {
-        max-width: 20rem;
-        max-height: 3.7rem;
-        margin-left: 3rem;
-        margin-top: .1rem;
-        margin-right: 3rem; }
-      .headerMain__container__console-logos__img-steam {
-        max-width: 18rem;
-        max-height: 3.7rem; }
-    .headerMain__container__nav {
-      position: fixed;
-      margin-top: -6.3rem;
-      margin-right: 4rem;
-      width: 97%; }
-      .headerMain__container__nav__container__ul {
-        display: flex;
-        justify-content: flex-end;
-        min-height: 6rem;
-        max-height: 4.7rem; }
-      .headerMain__container__nav__container__preorder {
-        margin-right: 3rem;
-        background-color: #3980a4;
-        width: 12.8%;
-        color: #fff;
-        font-size: 1.7rem;
-        padding: 1.6rem;
-        text-align: center; }
-      .headerMain__container__nav__container__menu {
-        background-color: #3980a4;
-        width: 5.7%;
-        color: #fff;
-        font-size: 1.7rem;
-        text-align: center;
-        padding: .7rem; }
-      .headerMain__container__nav__container__after-content:after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 4.9rem;
-        right: 0;
-        height: 7.7rem;
-        width: 8rem;
-        background-color: #225875;
-        clip-path: polygon(50% 0%, 100% 0, 100% 21%, 51% 41%, 0 22%, 0 0); }
-    .headerMain__container__content__logo {
-      width: 47%;
-      transform: translate(38rem, -5rem); }
-    .headerMain__container__content__text-box {
+    z-index: 9999;
+    right: 0;
+    width: 20vw;
+    height: 8vw;
+    left: 131rem;
+    top: 0; }
+    .header__fixed__button-menu__paragraph {
+      width: 7.9rem;
+      background-color: #3980a4;
+      color: #fff;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-size: 1.5rem;
       text-align: center;
-      margin-bottom: 4rem;
-      transform: translate(0, -5rem); }
-      .headerMain__container__content__text-box__main-text {
-        font-size: 2.5rem;
-        color: #fff;
-        font-weight: 900;
-        text-shadow: 0px 0px 7px black; }
-      .headerMain__container__content__text-box__sub-text {
-        font-size: 4rem;
-        margin-top: 1.3rem;
-        color: #fff;
-        font-weight: 900;
-        text-shadow: 0px 0px 7px black; }
-      .headerMain__container__content__text-box__second-sub-text {
-        font-size: 2rem;
-        margin-top: 1.3rem;
-        color: #fff;
-        font-weight: 900;
-        text-shadow: 0px 0px 7px black; }
-    .headerMain__container__content__news__ul {
-      display: grid;
-      grid-template-columns: auto auto; }
-      .headerMain__container__content__news__ul__li-left-box {
-        margin-left: 12rem;
-        margin-right: 17rem; }
-        .headerMain__container__content__news__ul__li-left-box__anchor {
-          text-decoration: none;
-          display: flex;
-          justify-content: center;
-          border: 5px solid #000; }
-          .headerMain__container__content__news__ul__li-left-box__anchor__image {
-            max-width: 15vw; }
-          .headerMain__container__content__news__ul__li-left-box__anchor__paragraph {
-            display: inline-block;
-            color: #26749a;
-            font-size: 2.5rem;
-            padding: 2.5rem; }
-        .headerMain__container__content__news__ul__li-left-box__anchor:hover {
-          border: 5px solid #73c6ee;
-          transition: all .7s; }
-      .headerMain__container__content__news__ul__li-right-box {
-        margin-left: -8rem;
-        margin-right: 12rem; }
-        .headerMain__container__content__news__ul__li-right-box__anchor {
-          text-decoration: none;
-          display: flex;
-          justify-content: center;
-          border: 5px solid #000; }
-          .headerMain__container__content__news__ul__li-right-box__anchor__image {
-            max-width: 15vw; }
-          .headerMain__container__content__news__ul__li-right-box__anchor__paragraph {
-            display: inline-block;
-            color: #26749a;
-            font-size: 2.5rem;
-            padding: 3.7rem; }
-        .headerMain__container__content__news__ul__li-right-box__anchor:hover {
-          border: 5px solid #73c6ee;
-          transition: all .7s; }
+      height: 7rem; }
+    .header__fixed__button-menu__hamburger-menu {
+      width: 7.9rem;
+      height: 100%;
+      background-color: #225875;
+      clip-path: polygon(50% 0%, 100% 0, 100% 19%, 50% 39%, 0 19%, 0 0); }
+      .header__fixed__button-menu__hamburger-menu__line {
+        display: block;
+        margin-left: 2.5rem;
+        width: 29px;
+        height: 2px;
+        margin-bottom: 1.5rem;
+        margin-top: -1rem;
+        background: #fff;
+        z-index: 1; }
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  display: block; }
+  .main__text {
+    position: relative;
+    z-index: 9999;
+    top: -5rem; }
+    .main__text__primary {
+      color: #fff;
+      font-size: 3.3rem;
+      text-align: center;
+      text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+    .main__text__sub-text {
+      color: #fff;
+      font-size: 4.5rem;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+    .main__text__sub-text-2 {
+      color: #fff;
+      font-size: 2.4rem;
+      text-align: center;
+      text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+  .main__logo {
+    position: relative;
+    z-index: 9999;
+    text-align: center;
+    top: .3rem; }
+    .main__logo__image {
+      width: 48%; }
+  .main__ul {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    bottom: 37rem;
+    left: 3rem; }
+    .main__ul__playstation__logo {
+      max-width: 12rem; }
+    .main__ul__xbox__logo {
+      max-width: 12rem;
+      margin-left: 3rem;
+      margin-right: 3rem; }
+    .main__ul__steam__logo {
+      max-width: 9rem; }
+  .main__feature-stories {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    left: 15rem;
+    top: 60rem; }
+    .main__feature-stories__left-box {
+      position: relative;
+      display: inline-block;
+      border: 5px #297499 solid;
+      max-width: 90%; }
+      .main__feature-stories__left-box__anchor {
+        position: relative;
+        display: block;
+        left: -13rem;
+        max-width: 100%; }
+        .main__feature-stories__left-box__anchor__figure img {
+          max-width: 50%;
+          height: auto; }
+        .main__feature-stories__left-box__anchor__content {
+          position: absolute;
+          color: #fff;
+          font-size: 2.3rem;
+          top: -10rem;
+          right: -25rem;
+          text-align: center;
+          width: 90%; }
+          .main__feature-stories__left-box__anchor__content p {
+            padding: 12rem;
+            text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+    .main__feature-stories__left-box:hover {
+      border: 5px solid #73c6ee;
+      transition: all .7s; }
+    .main__feature-stories__right-box {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      border: 5px #297499 solid;
+      left: 10rem; }
+      .main__feature-stories__right-box__anchor {
+        position: relative;
+        display: block; }
+        .main__feature-stories__right-box__anchor__figure img {
+          position: relative;
+          left: -13rem;
+          max-width: 50%;
+          height: auto; }
+        .main__feature-stories__right-box__anchor__content {
+          position: absolute;
+          color: #fff;
+          font-size: 2.3rem;
+          text-align: center;
+          width: 90%;
+          left: 15rem;
+          top: -8rem; }
+          .main__feature-stories__right-box__anchor__content p {
+            padding: 12rem;
+            text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+    .main__feature-stories__right-box:hover {
+      border: 5px solid #73c6ee;
+      transition: all .7s; }
+
+.main::after {
+  content: "";
+  background: url("../../images/monster-hunter-village.jpg");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden; }
+
+.preorder-link {
+  position: fixed;
+  width: 17.3rem;
+  height: 6.2vh;
+  right: 16rem;
+  background-color: #3980a4;
+  z-index: 9999;
+  padding: 3rem;
+  cursor: pointer; }
+  .preorder-link__anchor {
+    text-decoration: none; }
+    .preorder-link__anchor__text {
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 900;
+      text-align: center;
+      margin-top: -1.3rem; }
