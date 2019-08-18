@@ -86,6 +86,10 @@ body::before {
     top: 0; }
     @media (max-width: 25.875em) {
       .header__fixed__button-menu {
+        left: 33rem;
+        opacity: .9; } }
+    @media (max-width: 23.438em) {
+      .header__fixed__button-menu {
         left: 29rem;
         opacity: .9; } }
     .header__fixed__button-menu__paragraph {
@@ -99,6 +103,11 @@ body::before {
       height: 4.5rem; }
       @media (max-width: 25.875em) {
         .header__fixed__button-menu__paragraph {
+          width: 7.2rem;
+          height: 6rem;
+          padding-top: 1rem; } }
+      @media (max-width: 23.438em) {
+        .header__fixed__button-menu__paragraph {
           width: 6rem; } }
     .header__fixed__button-menu__hamburger-menu {
       width: 7.9rem;
@@ -106,6 +115,10 @@ body::before {
       background-color: #225875;
       clip-path: polygon(50% 0%, 100% 0, 100% 19%, 50% 39%, 0 19%, 0 0); }
       @media (max-width: 25.875em) {
+        .header__fixed__button-menu__hamburger-menu {
+          width: 9rem;
+          clip-path: polygon(0 0, 80% 0, 80% 50%, 40% 89%, 0 50%, 0 0); } }
+      @media (max-width: 23.438em) {
         .header__fixed__button-menu__hamburger-menu {
           width: 7.7rem;
           clip-path: polygon(0 0, 77% 0, 80% 50%, 40% 89%, 0 50%, 0 0); } }
@@ -120,6 +133,10 @@ body::before {
         z-index: 1; }
         @media (max-width: 25.875em) {
           .header__fixed__button-menu__hamburger-menu__line {
+            margin-left: 2.2rem;
+            margin-top: -2rem; } }
+        @media (max-width: 23.438em) {
+          .header__fixed__button-menu__hamburger-menu__line {
             margin-left: 1.5rem; } }
 
 .main {
@@ -132,6 +149,9 @@ body::before {
     top: -5rem; }
     @media (max-width: 25.875em) {
       .main__text {
+        top: 11rem; } }
+    @media (max-width: 23.438em) {
+      .main__text {
         top: 7rem; } }
     .main__text__primary {
       color: #fff;
@@ -139,6 +159,9 @@ body::before {
       text-align: center;
       text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
       @media (max-width: 25.875em) {
+        .main__text__primary {
+          font-size: 1.9rem; } }
+      @media (max-width: 23.438em) {
         .main__text__primary {
           font-size: 1.7rem; } }
     .main__text__sub-text {
@@ -150,6 +173,9 @@ body::before {
       text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
       @media (max-width: 25.875em) {
         .main__text__sub-text {
+          font-size: 4rem; } }
+      @media (max-width: 23.438em) {
+        .main__text__sub-text {
           font-size: 3rem; } }
     .main__text__sub-text-2 {
       color: #fff;
@@ -157,6 +183,9 @@ body::before {
       text-align: center;
       text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
       @media (max-width: 25.875em) {
+        .main__text__sub-text-2 {
+          font-size: 1.9rem; } }
+      @media (max-width: 23.438em) {
         .main__text__sub-text-2 {
           font-size: 1.7rem; } }
   .main__logo {
@@ -166,10 +195,16 @@ body::before {
     top: .3rem; }
     @media (max-width: 25.875em) {
       .main__logo {
+        top: 4.7rem; } }
+    @media (max-width: 23.438em) {
+      .main__logo {
         top: 8.3rem; } }
     .main__logo__image {
       width: 48%; }
       @media (max-width: 25.875em) {
+        .main__logo__image {
+          width: 100%; } }
+      @media (max-width: 23.438em) {
         .main__logo__image {
           width: 100%; } }
   .main__ul {
@@ -178,6 +213,11 @@ body::before {
     display: flex;
     bottom: 37rem;
     left: 3rem; }
+    @media (max-width: 25.875em) {
+      .main__ul {
+        top: 8rem;
+        left: 1.5rem;
+        bottom: 0; } }
     .main__ul__playstation__logo {
       max-width: 12rem; }
     .main__ul__xbox__logo {
@@ -264,11 +304,20 @@ body::before {
     .main::after {
       background: url("../../images/background-image-phone.jpg");
       max-width: 100%;
+      width: 42rem;
+      background-size: cover;
+      background-position: right;
+      max-height: 100vh;
+      height: 70vh; } }
+  @media (max-width: 23.438em) {
+    .main::after {
+      background: url("../../images/background-image-phone.jpg");
+      max-width: 100%;
       width: 38rem;
       background-size: cover;
       background-position: center center;
       max-height: 100vh;
-      height: 54vh; } }
+      height: 63vh; } }
 
 .preorder-link {
   position: fixed;
@@ -281,6 +330,14 @@ body::before {
   cursor: pointer; }
   @media (max-width: 25.875em) {
     .preorder-link {
+      right: 33rem;
+      width: 13.3rem;
+      height: 6.2vh;
+      padding: 1.5rem;
+      border: 2px solid #fff;
+      opacity: .9; } }
+  @media (max-width: 23.438em) {
+    .preorder-link {
       right: 37rem;
       width: 13.3rem;
       height: 6.2vh;
@@ -292,6 +349,9 @@ body::before {
     @media (max-width: 25.875em) {
       .preorder-link__anchor {
         margin: 1rem; } }
+    @media (max-width: 23.438em) {
+      .preorder-link__anchor {
+        margin: 1rem; } }
     .preorder-link__anchor__text {
       font-size: 1.6rem;
       color: #fff;
@@ -299,6 +359,10 @@ body::before {
       text-align: center;
       margin-top: -1.3rem; }
       @media (max-width: 25.875em) {
+        .preorder-link__anchor__text {
+          font-size: 1.3rem;
+          margin-top: -1rem; } }
+      @media (max-width: 23.438em) {
         .preorder-link__anchor__text {
           font-size: 1.3rem;
           margin-top: -.7rem; } }

@@ -1,9 +1,17 @@
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
+        @media (max-width: 23.438em) {
+            @content
+        };
+    }
+
+    @if $breakpoint == iPhone6_7_8_plus {
         @media (max-width: 25.875em) {
             @content
         };
     }
+
+    
 
     @if $breakpoint == tablet-portrait {
         @media (max-width: 56.25em) {
