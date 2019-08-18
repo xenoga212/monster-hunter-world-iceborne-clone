@@ -92,6 +92,9 @@ body::before {
       .header__fixed__button-menu {
         left: 29rem;
         opacity: .9; } }
+    @media (max-width: 20em) and (max-height: 35.5em) {
+      .header__fixed__button-menu {
+        left: 25rem; } }
     .header__fixed__button-menu__paragraph {
       width: 8rem;
       background-color: #3980a4;
@@ -152,7 +155,13 @@ body::before {
         top: 11rem; } }
     @media (max-width: 23.438em) {
       .main__text {
-        top: 7rem; } }
+        top: 13rem; } }
+    @media (max-width: 23.438em) and (max-height: 41.688em) {
+      .main__text {
+        top: 13rem; } }
+    @media (max-width: 20em) and (max-height: 35.5em) {
+      .main__text {
+        top: 12rem; } }
     .main__text__primary {
       color: #fff;
       font-size: 3.3rem;
@@ -164,6 +173,9 @@ body::before {
       @media (max-width: 23.438em) {
         .main__text__primary {
           font-size: 1.7rem; } }
+      @media (max-width: 20em) and (max-height: 35.5em) {
+        .main__text__primary {
+          font-size: 1.5rem; } }
     .main__text__sub-text {
       color: #fff;
       font-size: 4.5rem;
@@ -177,6 +189,9 @@ body::before {
       @media (max-width: 23.438em) {
         .main__text__sub-text {
           font-size: 3rem; } }
+      @media (max-width: 20em) and (max-height: 35.5em) {
+        .main__text__sub-text {
+          font-size: 2.9rem; } }
     .main__text__sub-text-2 {
       color: #fff;
       font-size: 2.4rem;
@@ -188,6 +203,9 @@ body::before {
       @media (max-width: 23.438em) {
         .main__text__sub-text-2 {
           font-size: 1.7rem; } }
+      @media (max-width: 20em) and (max-height: 35.5em) {
+        .main__text__sub-text-2 {
+          font-size: 1.5rem; } }
   .main__logo {
     position: relative;
     z-index: 9999;
@@ -218,14 +236,50 @@ body::before {
         top: 8rem;
         left: 1.5rem;
         bottom: 0; } }
+    @media (max-width: 23.438em) and (max-height: 41.688em) {
+      .main__ul {
+        top: 9rem;
+        left: 1.5rem; } }
     .main__ul__playstation__logo {
       max-width: 12rem; }
+      @media (max-width: 23.438em) and (max-height: 41.688em) {
+        .main__ul__playstation__logo {
+          max-width: 11rem; } }
+      @media (max-width: 23.438em) {
+        .main__ul__playstation__logo {
+          max-width: 11rem; } }
+      @media (max-width: 20em) and (max-height: 35.5em) {
+        .main__ul__playstation__logo {
+          max-width: 9rem; } }
     .main__ul__xbox__logo {
       max-width: 12rem;
       margin-left: 3rem;
       margin-right: 3rem; }
+      @media (max-width: 23.438em) and (max-height: 41.688em) {
+        .main__ul__xbox__logo {
+          max-width: 11rem;
+          margin-left: 2rem;
+          margin-right: 2rem; } }
+      @media (max-width: 23.438em) {
+        .main__ul__xbox__logo {
+          max-width: 11rem;
+          margin-left: 2rem;
+          margin-right: 2rem; } }
+      @media (max-width: 20em) and (max-height: 35.5em) {
+        .main__ul__xbox__logo {
+          max-width: 9rem; } }
     .main__ul__steam__logo {
       max-width: 9rem; }
+      @media (max-width: 23.438em) and (max-height: 41.688em) {
+        .main__ul__steam__logo {
+          max-width: 8rem; } }
+      @media (max-width: 23.438em) {
+        .main__ul__steam__logo {
+          max-width: 8rem; } }
+      @media (max-width: 20em) and (max-height: 35.5em) {
+        .main__ul__steam__logo {
+          max-width: 7.5rem;
+          margin-top: -.3rem; } }
   .main__feature-stories {
     position: absolute;
     z-index: 1;
@@ -318,6 +372,13 @@ body::before {
       background-position: center center;
       max-height: 100vh;
       height: 63vh; } }
+  @media (max-width: 23.438em) and (max-height: 41.688em) {
+    .main::after {
+      height: 50rem; } }
+  @media (max-width: 20em) and (max-height: 35.5em) {
+    .main::after {
+      max-height: 76vh;
+      background-position: bottom; } }
 
 .preorder-link {
   position: fixed;
@@ -344,6 +405,12 @@ body::before {
       padding: 1.5rem;
       border: 2px solid #fff;
       opacity: .9; } }
+  @media (max-width: 20em) and (max-height: 35.5em) {
+    .preorder-link {
+      width: 11.3rem;
+      height: 7.3vh;
+      padding: .8rem;
+      right: 41rem; } }
   .preorder-link__anchor {
     text-decoration: none; }
     @media (max-width: 25.875em) {

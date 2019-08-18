@@ -26,6 +26,13 @@
         opacity: .9;
     }
 
+    @include respond(iPhone_5_se) {
+        width: 11.3rem;
+        height: 7.3vh;
+        padding: .8rem;
+        right: 41rem;
+    }
+
     &__anchor {
         text-decoration: none;
 

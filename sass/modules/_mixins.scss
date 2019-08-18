@@ -5,6 +5,21 @@
         };
     }
 
+    @if $breakpoint == iPhone_5_se {
+        @media (max-width:  20.000em) and (max-height: 35.500em) {
+            @content
+        };
+    }
+
+   
+
+    @if $breakpoint == iPhone_6_7_8 {
+        @media (max-width: 23.438em) and (max-height: 41.688em) {
+            @content
+        };
+    }
+    
+
     @if $breakpoint == iPhone6_7_8_plus {
         @media (max-width: 25.875em) {
             @content
