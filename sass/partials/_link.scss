@@ -8,7 +8,37 @@
     padding: 3rem;
     cursor: pointer;
 
+    @include respond(iPadPro) {
+        height: 3.2vh !important;
+        right: 13rem !important;
+    }
+
+    @include respond(iPad) {
+        width: 26.3rem;
+        height: 8.2rem;
+        right: 19rem !important;
+        border: 2px solid #fff;
+    }
+
     @include respond(iPhone6_7_8_plus) {
+        right: 13rem !important;
+        width: 13.3rem;
+        height: 6.2vh;
+        padding: 1.5rem;
+        border: 2px solid #fff;
+        opacity: .9;
+    }
+
+   
+
+    @include respond(iPhone_5_se) {
+        width: 11.3rem;
+        height: 7.3vh;
+        padding: .8rem;
+        right: 16rem !important;
+    }
+
+    @include respond(phone) {
         right: 33rem;
         width: 13.3rem;
         height: 6.2vh;
@@ -17,21 +47,24 @@
         opacity: .9;
     }
 
-    @include respond(phone) {
-        right: 37rem;
-        width: 13.3rem;
-        height: 6.2vh;
-        padding: 1.5rem;
-        border: 2px solid #fff;
-        opacity: .9;
+    @include respond(iPhoneX) {
+        right: 13 !important;
     }
 
-    @include respond(iPhone_5_se) {
-        width: 11.3rem;
-        height: 7.3vh;
-        padding: .8rem;
-        right: 41rem;
+    @include respond(galaxyS5) {
+        right: 13rem !important;
     }
+
+    @include respond(pixel2) {
+        right: 13rem !important;
+    }
+
+    @include respond(pixel2_xl) {
+        right: 13rem !important;
+    }
+
+
+  
 
     &__anchor {
         text-decoration: none;
@@ -51,15 +84,30 @@
             text-align: center;
             margin-top: -1.3rem;
 
+            @include respond(iPad) {
+                font-size: 2.8rem;
+                margin-top: -0.3rem;
+            }
+
             @include respond(iPhone6_7_8_plus) {
                 font-size: 1.3rem;
                 margin-top: -1rem;
+            }
+
+            @include respond(iPhone_6_7_8) {
+                margin-top: -1.3rem !important;
+            }
+
+            @include respond(iPhone_5_se) {
+                margin-top: -1.6rem !important;
             }
 
             @include respond(phone) {
                 font-size: 1.3rem;
                 margin-top: -.7rem;
             }
+
+         
         }
     }
 }

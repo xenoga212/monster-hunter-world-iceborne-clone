@@ -8,39 +8,74 @@
         z-index: 9999;
         top: -5rem;
 
+        @include respond(iPadPro) {
+            left: 2rem !important;
+        }
+
+        @include respond(iPad) {
+            top: 25rem !important;
+            left: 4rem !important;
+        }
+
+
         @include respond(iPhone6_7_8_plus) {
-            top: 11rem;
+            top: 11rem !important;
+            left: 0rem !important;
         }
 
         @include respond(phone) {
-            top: 13rem;
+            top: 13rem !important;
+            left: -1rem !important;
         }
 
+       
+        @include respond(pixel2_xl) {
+            top: 16rem !important;
+        }
+
+        @include respond(pixel2) {
+            top: 11rem !important;
+        }
+
+
         @include respond(iPhone_6_7_8) {
-            top: 13rem;
+            top: 14rem !important;
+            left: 0rem !important;
         }
 
         @include respond(iPhone_5_se) {
-            top: 12rem;
+            top: 11rem !important;
+            left: 1rem !important;
         }
 
+        @include respond(galaxyS5) {
+            left: 1rem !important;
+        }
+
+       
         &__primary {
             color: #fff;
             font-size: 3.3rem;
             text-align: center;
             text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
 
+             @include respond(iPad) {
+                font-size: 3.3rem;
+            }
+
             @include respond(iPhone6_7_8_plus) {
                 font-size: 1.9rem;
             }
 
             @include respond(phone) {
-                font-size: 1.7rem;
+                font-size: 1.7rem !important;
             }
 
             @include respond(iPhone_5_se) {
-                font-size: 1.5rem;
+                font-size: 1.5rem !important;
             }
+
+           
         }
 
         &__sub-text {
@@ -51,17 +86,29 @@
             margin-bottom: 1rem;
             text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
 
+            @include respond(iPad) {
+                font-size: 5.5rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+
             @include respond(iPhone6_7_8_plus) {
                 font-size: 4rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
 
             @include respond(phone) {
-                font-size: 3rem;
+                font-size: 3rem !important;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
 
             @include respond(iPhone_5_se) {
-                font-size: 2.9rem;
+                font-size: 2.9rem !important;
             }
+
+          
         }
 
         &__sub-text-2 {
@@ -69,18 +116,24 @@
             font-size: 2.4rem;
             text-align: center;
             text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000;
+
+            @include respond(iPad) {
+                font-size: 3.3rem !important;
+            }
             
             @include respond(iPhone6_7_8_plus) {
-                font-size: 1.9rem;
+                font-size: 1.9rem !important;
             }
 
             @include respond(phone) {
-                font-size: 1.7rem;
+                font-size: 1.7rem !important;
             }
 
             @include respond(iPhone_5_se) {
-                font-size: 1.5rem;
+                font-size: 1.5rem !important;
             }
+
+    
         }
     }
     
@@ -90,6 +143,10 @@
         text-align: center;
         top: .3rem;
 
+        @include respond(iPad) {
+            top: 11rem;
+        }
+
         @include respond(iPhone6_7_8_plus) {
             top: 4.7rem;
         }
@@ -98,8 +155,17 @@
             top: 8.3rem;
         }
 
+
         &__image {
             width: 48%;
+            
+            @include respond(iPadPro) {
+                width: 103%;
+            }
+
+            @include respond(iPad) {
+                width: 100%;
+            }
 
             @include respond(iPhone6_7_8_plus) {
                 width: 100%;
@@ -108,6 +174,7 @@
             @include respond(phone) {
                 width: 100%;
             }
+
             
         }
     }
@@ -118,6 +185,15 @@
         display: flex; 
         bottom: 37rem;
         left: 3rem;
+
+        @include respond(iPadPro) {
+            bottom: 59rem !important;
+            left: 2rem !important;
+        }
+
+        @include respond(iPad) {
+            top: 18rem;
+        }
 
         @include respond(iPhone6_7_8_plus) {
             top: 8rem;
@@ -130,11 +206,27 @@
             left: 1.5rem;
         }
 
+        @include respond(pixel2_xl) {
+            top: 9rem !important;
+        }
+
+        @include respond(pixel2) {
+            top: 6rem !important;
+        }
+
         
         &__playstation {
 
             &__logo {
                 max-width: 12rem;
+
+                @include respond(iPad) {
+                    max-width: 25rem;
+                }
+
+                @include respond(iPhone6_7_8_plus) {
+                    max-width: 12rem;
+                }
 
                 @include respond(iPhone_6_7_8) {
                     max-width: 11rem;
@@ -147,6 +239,7 @@
                 @include respond(iPhone_5_se) {
                     max-width: 9rem;
                 }
+
             }
         }
 
@@ -157,6 +250,16 @@
                 margin-left: 3rem;
                 margin-right: 3rem;
 
+                @include respond(iPad) {
+                    max-width: 25rem;
+                }
+
+                @include respond(iPhone6_7_8_plus) {
+                    max-width: 12rem;
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                }
+
                 @include respond(iPhone_6_7_8) {
                     max-width: 11rem;
                     margin-left: 2rem;
@@ -172,6 +275,7 @@
                 @include respond(iPhone_5_se) {
                     max-width: 9rem;
                 }
+
             }
         }
 
@@ -180,6 +284,16 @@
 
             &__logo {
                 max-width: 9rem;
+
+                @include respond(iPad) {
+                    max-width: 17rem;
+                    margin-top: -.3rem;
+                }
+
+                @include respond(iPhone6_7_8_plus) {
+                    max-width: 9rem;
+                    margin-top: -.3rem;
+                }
 
                 @include respond(iPhone_6_7_8) {
                     max-width: 8rem;
@@ -204,6 +318,10 @@
         text-align: center;
         left: 15rem;
         top: 60rem;
+
+        @include respond(iPad) {
+            position: inherit;
+        }
         
 
         &__left-box {
@@ -310,36 +428,75 @@
 
     
 
+    @include respond(iPadPro) {
+        background-size: cover !important;
+        max-width: 103vw !important;
+        width: 105vw !important;
+    }
+
+    @include respond(iPad) {
+        background: url('../../images/background-image-phone.jpg');
+        max-width: 105vw !important;
+        width: 105vw !important;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+    }
+
+    
+
     @include respond(iPhone6_7_8_plus) {
         background: url('../../images/background-image-phone.jpg');
         max-width: 100%;
-        width: 42rem;
+        width: 42rem !important;
         background-size: cover;
         background-position: right;
         max-height: 100vh;
         height: 70vh;
     }
-
     
 
     @include respond(phone) {
         background: url('../../images/background-image-phone.jpg');
         max-width: 100%;
-        width: 38rem;
+        width: 39rem !important;
         background-size: cover;
         background-position: center center;
         max-height: 100vh;
         height: 63vh;
-
     }
+
+   
 
     @include respond(iPhone_6_7_8) {
         height: 50rem;
+        width: 38rem;
+    }
+
+    @include respond(pixel2) {
+        width: 44rem !important;
+        max-width: 50rem !important;
+    }
+
+    @include respond(pixel2_xl) {
+        max-width: 104vw !important;
+        width: 104vw !important;
+    }
+
+    @include respond(galaxyS5) {
+        width: 40rem !important;
+      
     }
 
     @include respond(iPhone_5_se) {
         max-height: 76vh;
         background-position: bottom;
+        max-width: 33.5rem !important;
+        width: 44rem !important;
     }
+
+
+  
+
 }
 

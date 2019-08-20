@@ -68,6 +68,12 @@ body::before {
   content: "";
   z-index: -1;
   opacity: .5; }
+  @media (max-width: 25.875em) {
+    body::before {
+      width: 0; } }
+  @media (max-width: 23.438em) {
+    body::before {
+      width: 0; } }
 
 .header {
   position: absolute;
@@ -84,17 +90,36 @@ body::before {
     height: 8vw;
     left: 131rem;
     top: 0; }
+    @media (max-width: 64em) and (max-height: 85.375em) {
+      .header__fixed__button-menu {
+        left: 95rem !important; } }
+    @media (max-width: 48em) and (max-height: 64em) {
+      .header__fixed__button-menu {
+        right: 8rem !important;
+        left: 65rem !important; } }
     @media (max-width: 25.875em) {
       .header__fixed__button-menu {
-        left: 33rem;
+        left: 33rem !important;
         opacity: .9; } }
     @media (max-width: 23.438em) {
       .header__fixed__button-menu {
         left: 29rem;
         opacity: .9; } }
+    @media (max-width: 25.688em) and (max-height: 51.438em) {
+      .header__fixed__button-menu {
+        left: 32rem !important; } }
+    @media (max-width: 23.438em) and (max-height: 50.75em) {
+      .header__fixed__button-menu {
+        left: 29rem !important; } }
+    @media (max-width: 23.438em) and (max-height: 41.688em) {
+      .header__fixed__button-menu {
+        left: 29rem !important; } }
+    @media (max-width: 22.5em) and (max-height: 40em) {
+      .header__fixed__button-menu {
+        left: 27rem !important; } }
     @media (max-width: 20em) and (max-height: 35.5em) {
       .header__fixed__button-menu {
-        left: 25rem; } }
+        left: 23rem !important; } }
     .header__fixed__button-menu__paragraph {
       width: 8rem;
       background-color: #3980a4;
@@ -104,27 +129,41 @@ body::before {
       font-size: 1.4rem;
       text-align: center;
       height: 4.5rem; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .header__fixed__button-menu__paragraph {
+          width: 12rem;
+          font-size: 2.7rem;
+          padding-top: 1.5rem;
+          height: 8.5rem; } }
       @media (max-width: 25.875em) {
         .header__fixed__button-menu__paragraph {
-          width: 7.2rem;
-          height: 6rem;
-          padding-top: 1rem; } }
+          width: 7.2rem !important;
+          height: 6rem !important;
+          padding-top: 1rem !important;
+          font-size: 1.4rem !important; } }
       @media (max-width: 23.438em) {
         .header__fixed__button-menu__paragraph {
-          width: 6rem; } }
+          width: 6rem;
+          font-size: 1.4rem !important; } }
     .header__fixed__button-menu__hamburger-menu {
       width: 7.9rem;
       height: 100%;
       background-color: #225875;
       clip-path: polygon(50% 0%, 100% 0, 100% 19%, 50% 39%, 0 19%, 0 0); }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .header__fixed__button-menu__hamburger-menu {
+          width: 11.9rem;
+          height: 14vh !important; } }
       @media (max-width: 25.875em) {
         .header__fixed__button-menu__hamburger-menu {
           width: 9rem;
-          clip-path: polygon(0 0, 80% 0, 80% 50%, 40% 89%, 0 50%, 0 0); } }
+          clip-path: polygon(0 0, 80% 0, 80% 50%, 40% 89%, 0 50%, 0 0);
+          height: 100% !important; } }
       @media (max-width: 23.438em) {
         .header__fixed__button-menu__hamburger-menu {
-          width: 7.7rem;
-          clip-path: polygon(0 0, 77% 0, 80% 50%, 40% 89%, 0 50%, 0 0); } }
+          width: 9rem !important;
+          clip-path: polygon(0 0, 77% 0, 80% 50%, 40% 89%, 0 50%, 0 0);
+          height: 100% !important; } }
       .header__fixed__button-menu__hamburger-menu__line {
         display: block;
         margin-left: 2.5rem;
@@ -134,13 +173,26 @@ body::before {
         margin-top: -1rem;
         background: #fff;
         z-index: 1; }
+        @media (max-width: 48em) and (max-height: 64em) {
+          .header__fixed__button-menu__hamburger-menu__line {
+            margin-left: 3.3rem;
+            width: 50px;
+            margin-top: -1.6rem; } }
         @media (max-width: 25.875em) {
           .header__fixed__button-menu__hamburger-menu__line {
             margin-left: 2.2rem;
-            margin-top: -2rem; } }
+            margin-top: -2rem;
+            width: 30px !important; } }
         @media (max-width: 23.438em) {
           .header__fixed__button-menu__hamburger-menu__line {
-            margin-left: 1.5rem; } }
+            margin-left: 1.6rem !important;
+            width: 30px !important; } }
+        @media (max-width: 23.438em) and (max-height: 41.688em) {
+          .header__fixed__button-menu__hamburger-menu__line {
+            margin-left: 2.1rem !important; } }
+        @media (max-width: 23.438em) and (max-height: 50.75em) {
+          .header__fixed__button-menu__hamburger-menu__line {
+            margin-left: 2rem !important; } }
 
 .main {
   position: relative;
@@ -150,32 +202,55 @@ body::before {
     position: relative;
     z-index: 9999;
     top: -5rem; }
+    @media (max-width: 64em) and (max-height: 85.375em) {
+      .main__text {
+        left: 2rem !important; } }
+    @media (max-width: 48em) and (max-height: 64em) {
+      .main__text {
+        top: 25rem !important;
+        left: 4rem !important; } }
     @media (max-width: 25.875em) {
       .main__text {
-        top: 11rem; } }
+        top: 11rem !important;
+        left: 0rem !important; } }
     @media (max-width: 23.438em) {
       .main__text {
-        top: 13rem; } }
+        top: 13rem !important;
+        left: -1rem !important; } }
+    @media (max-width: 25.688em) and (max-height: 51.438em) {
+      .main__text {
+        top: 16rem !important; } }
+    @media (max-width: 25.688em) and (max-height: 45.688em) {
+      .main__text {
+        top: 11rem !important; } }
     @media (max-width: 23.438em) and (max-height: 41.688em) {
       .main__text {
-        top: 13rem; } }
+        top: 14rem !important;
+        left: 0rem !important; } }
     @media (max-width: 20em) and (max-height: 35.5em) {
       .main__text {
-        top: 12rem; } }
+        top: 11rem !important;
+        left: 1rem !important; } }
+    @media (max-width: 22.5em) and (max-height: 40em) {
+      .main__text {
+        left: 1rem !important; } }
     .main__text__primary {
       color: #fff;
       font-size: 3.3rem;
       text-align: center;
       text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .main__text__primary {
+          font-size: 3.3rem; } }
       @media (max-width: 25.875em) {
         .main__text__primary {
           font-size: 1.9rem; } }
       @media (max-width: 23.438em) {
         .main__text__primary {
-          font-size: 1.7rem; } }
+          font-size: 1.7rem !important; } }
       @media (max-width: 20em) and (max-height: 35.5em) {
         .main__text__primary {
-          font-size: 1.5rem; } }
+          font-size: 1.5rem !important; } }
     .main__text__sub-text {
       color: #fff;
       font-size: 4.5rem;
@@ -183,34 +258,49 @@ body::before {
       margin-top: 1rem;
       margin-bottom: 1rem;
       text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .main__text__sub-text {
+          font-size: 5.5rem;
+          margin-top: 3rem;
+          margin-bottom: 3rem; } }
       @media (max-width: 25.875em) {
         .main__text__sub-text {
-          font-size: 4rem; } }
+          font-size: 4rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem; } }
       @media (max-width: 23.438em) {
         .main__text__sub-text {
-          font-size: 3rem; } }
+          font-size: 3rem !important;
+          margin-top: 1rem;
+          margin-bottom: 1rem; } }
       @media (max-width: 20em) and (max-height: 35.5em) {
         .main__text__sub-text {
-          font-size: 2.9rem; } }
+          font-size: 2.9rem !important; } }
     .main__text__sub-text-2 {
       color: #fff;
       font-size: 2.4rem;
       text-align: center;
       text-shadow: 0 0 15px #000, 0 0 15px #000, 0 0 10px #000; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .main__text__sub-text-2 {
+          font-size: 3.3rem !important; } }
       @media (max-width: 25.875em) {
         .main__text__sub-text-2 {
-          font-size: 1.9rem; } }
+          font-size: 1.9rem !important; } }
       @media (max-width: 23.438em) {
         .main__text__sub-text-2 {
-          font-size: 1.7rem; } }
+          font-size: 1.7rem !important; } }
       @media (max-width: 20em) and (max-height: 35.5em) {
         .main__text__sub-text-2 {
-          font-size: 1.5rem; } }
+          font-size: 1.5rem !important; } }
   .main__logo {
     position: relative;
     z-index: 9999;
     text-align: center;
     top: .3rem; }
+    @media (max-width: 48em) and (max-height: 64em) {
+      .main__logo {
+        top: 11rem; } }
     @media (max-width: 25.875em) {
       .main__logo {
         top: 4.7rem; } }
@@ -219,6 +309,12 @@ body::before {
         top: 8.3rem; } }
     .main__logo__image {
       width: 48%; }
+      @media (max-width: 64em) and (max-height: 85.375em) {
+        .main__logo__image {
+          width: 103%; } }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .main__logo__image {
+          width: 100%; } }
       @media (max-width: 25.875em) {
         .main__logo__image {
           width: 100%; } }
@@ -231,6 +327,13 @@ body::before {
     display: flex;
     bottom: 37rem;
     left: 3rem; }
+    @media (max-width: 64em) and (max-height: 85.375em) {
+      .main__ul {
+        bottom: 59rem !important;
+        left: 2rem !important; } }
+    @media (max-width: 48em) and (max-height: 64em) {
+      .main__ul {
+        top: 18rem; } }
     @media (max-width: 25.875em) {
       .main__ul {
         top: 8rem;
@@ -240,8 +343,20 @@ body::before {
       .main__ul {
         top: 9rem;
         left: 1.5rem; } }
+    @media (max-width: 25.688em) and (max-height: 51.438em) {
+      .main__ul {
+        top: 9rem !important; } }
+    @media (max-width: 25.688em) and (max-height: 45.688em) {
+      .main__ul {
+        top: 6rem !important; } }
     .main__ul__playstation__logo {
       max-width: 12rem; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .main__ul__playstation__logo {
+          max-width: 25rem; } }
+      @media (max-width: 25.875em) {
+        .main__ul__playstation__logo {
+          max-width: 12rem; } }
       @media (max-width: 23.438em) and (max-height: 41.688em) {
         .main__ul__playstation__logo {
           max-width: 11rem; } }
@@ -255,6 +370,14 @@ body::before {
       max-width: 12rem;
       margin-left: 3rem;
       margin-right: 3rem; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .main__ul__xbox__logo {
+          max-width: 25rem; } }
+      @media (max-width: 25.875em) {
+        .main__ul__xbox__logo {
+          max-width: 12rem;
+          margin-left: 2rem;
+          margin-right: 2rem; } }
       @media (max-width: 23.438em) and (max-height: 41.688em) {
         .main__ul__xbox__logo {
           max-width: 11rem;
@@ -270,6 +393,14 @@ body::before {
           max-width: 9rem; } }
     .main__ul__steam__logo {
       max-width: 9rem; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .main__ul__steam__logo {
+          max-width: 17rem;
+          margin-top: -.3rem; } }
+      @media (max-width: 25.875em) {
+        .main__ul__steam__logo {
+          max-width: 9rem;
+          margin-top: -.3rem; } }
       @media (max-width: 23.438em) and (max-height: 41.688em) {
         .main__ul__steam__logo {
           max-width: 8rem; } }
@@ -286,6 +417,9 @@ body::before {
     text-align: center;
     left: 15rem;
     top: 60rem; }
+    @media (max-width: 48em) and (max-height: 64em) {
+      .main__feature-stories {
+        position: inherit; } }
     .main__feature-stories__left-box {
       position: relative;
       display: inline-block;
@@ -354,11 +488,24 @@ body::before {
   height: 100%;
   z-index: 1;
   overflow: hidden; }
+  @media (max-width: 64em) and (max-height: 85.375em) {
+    .main::after {
+      background-size: cover !important;
+      max-width: 103vw !important;
+      width: 105vw !important; } }
+  @media (max-width: 48em) and (max-height: 64em) {
+    .main::after {
+      background: url("../../images/background-image-phone.jpg");
+      max-width: 105vw !important;
+      width: 105vw !important;
+      background-size: cover;
+      background-position: bottom;
+      height: 100vh; } }
   @media (max-width: 25.875em) {
     .main::after {
       background: url("../../images/background-image-phone.jpg");
       max-width: 100%;
-      width: 42rem;
+      width: 42rem !important;
       background-size: cover;
       background-position: right;
       max-height: 100vh;
@@ -367,18 +514,32 @@ body::before {
     .main::after {
       background: url("../../images/background-image-phone.jpg");
       max-width: 100%;
-      width: 38rem;
+      width: 39rem !important;
       background-size: cover;
       background-position: center center;
       max-height: 100vh;
       height: 63vh; } }
   @media (max-width: 23.438em) and (max-height: 41.688em) {
     .main::after {
-      height: 50rem; } }
+      height: 50rem;
+      width: 38rem; } }
+  @media (max-width: 25.688em) and (max-height: 45.688em) {
+    .main::after {
+      width: 44rem !important;
+      max-width: 50rem !important; } }
+  @media (max-width: 25.688em) and (max-height: 51.438em) {
+    .main::after {
+      max-width: 104vw !important;
+      width: 104vw !important; } }
+  @media (max-width: 22.5em) and (max-height: 40em) {
+    .main::after {
+      width: 40rem !important; } }
   @media (max-width: 20em) and (max-height: 35.5em) {
     .main::after {
       max-height: 76vh;
-      background-position: bottom; } }
+      background-position: bottom;
+      max-width: 33.5rem !important;
+      width: 44rem !important; } }
 
 .preorder-link {
   position: fixed;
@@ -389,17 +550,19 @@ body::before {
   z-index: 9999;
   padding: 3rem;
   cursor: pointer; }
+  @media (max-width: 64em) and (max-height: 85.375em) {
+    .preorder-link {
+      height: 3.2vh !important;
+      right: 13rem !important; } }
+  @media (max-width: 48em) and (max-height: 64em) {
+    .preorder-link {
+      width: 26.3rem;
+      height: 8.2rem;
+      right: 19rem !important;
+      border: 2px solid #fff; } }
   @media (max-width: 25.875em) {
     .preorder-link {
-      right: 33rem;
-      width: 13.3rem;
-      height: 6.2vh;
-      padding: 1.5rem;
-      border: 2px solid #fff;
-      opacity: .9; } }
-  @media (max-width: 23.438em) {
-    .preorder-link {
-      right: 37rem;
+      right: 13rem !important;
       width: 13.3rem;
       height: 6.2vh;
       padding: 1.5rem;
@@ -410,7 +573,27 @@ body::before {
       width: 11.3rem;
       height: 7.3vh;
       padding: .8rem;
-      right: 41rem; } }
+      right: 16rem !important; } }
+  @media (max-width: 23.438em) {
+    .preorder-link {
+      right: 33rem;
+      width: 13.3rem;
+      height: 6.2vh;
+      padding: 1.5rem;
+      border: 2px solid #fff;
+      opacity: .9; } }
+  @media (max-width: 23.438em) and (max-height: 50.75em) {
+    .preorder-link {
+      right: 13 !important; } }
+  @media (max-width: 22.5em) and (max-height: 40em) {
+    .preorder-link {
+      right: 13rem !important; } }
+  @media (max-width: 25.688em) and (max-height: 45.688em) {
+    .preorder-link {
+      right: 13rem !important; } }
+  @media (max-width: 25.688em) and (max-height: 51.438em) {
+    .preorder-link {
+      right: 13rem !important; } }
   .preorder-link__anchor {
     text-decoration: none; }
     @media (max-width: 25.875em) {
@@ -425,10 +608,20 @@ body::before {
       font-weight: 900;
       text-align: center;
       margin-top: -1.3rem; }
+      @media (max-width: 48em) and (max-height: 64em) {
+        .preorder-link__anchor__text {
+          font-size: 2.8rem;
+          margin-top: -0.3rem; } }
       @media (max-width: 25.875em) {
         .preorder-link__anchor__text {
           font-size: 1.3rem;
           margin-top: -1rem; } }
+      @media (max-width: 23.438em) and (max-height: 41.688em) {
+        .preorder-link__anchor__text {
+          margin-top: -1.3rem !important; } }
+      @media (max-width: 20em) and (max-height: 35.5em) {
+        .preorder-link__anchor__text {
+          margin-top: -1.6rem !important; } }
       @media (max-width: 23.438em) {
         .preorder-link__anchor__text {
           font-size: 1.3rem;

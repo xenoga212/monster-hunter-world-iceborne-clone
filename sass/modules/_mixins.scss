@@ -5,11 +5,31 @@
         };
     }
 
-    @if $breakpoint == iPhone_5_se {
-        @media (max-width:  20.000em) and (max-height: 35.500em) {
+
+    @if $breakpoint == iPhoneX {
+        @media (max-width: 23.438em) and (max-height: 50.750em) {
             @content
         };
     }
+
+    @if $breakpoint == galaxyS5 {
+        @media (max-width: 22.500em) and (max-height: 40.000em) {
+            @content
+        };
+    }
+
+    @if $breakpoint == pixel2 {
+        @media (max-width: 25.688em) and (max-height: 45.688em) {
+            @content
+        };
+    }
+
+    @if $breakpoint == pixel2_xl {
+        @media (max-width: 25.688em) and (max-height: 51.438em) {
+            @content
+        };
+    }
+
 
    
 
@@ -26,7 +46,17 @@
         };
     }
 
-    
+    @if $breakpoint == iPad {
+        @media (max-width: 48.000em) and (max-height: 64.000em) {
+            @content
+        };
+    }
+
+    @if $breakpoint == iPadPro {
+        @media (max-width: 64.000em) and (max-height: 85.375em) {
+            @content
+        };
+    }
 
     @if $breakpoint == tablet-portrait {
         @media (max-width: 56.25em) {
@@ -36,6 +66,12 @@
 
     @if $breakpoint == tablet-landscape {
         @media (max-width: 75em) {
+            @content
+        };
+    }
+
+    @if $breakpoint == iPhone_5_se {
+        @media (max-width:  20.000em) and (max-height: 35.500em) {
             @content
         };
     }

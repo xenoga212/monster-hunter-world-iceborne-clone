@@ -25,4 +25,12 @@ body::before {
     content: "";
     z-index: -1;
     opacity: .5;
+
+    @include respond(iPhone6_7_8_plus) {
+        width: 0;
+    }
+
+    @include respond(phone) {
+        width: 0;
+    }
 }

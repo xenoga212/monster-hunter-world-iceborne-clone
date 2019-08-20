@@ -17,10 +17,20 @@
             left: 131rem;
             top: 0;
 
+            @include respond(iPadPro) {
+                left: 95rem !important;
+            }
+
+            @include respond(iPad) {
+                right: 8rem !important;
+                left: 65rem !important;
+            }
+
             @include respond(iPhone6_7_8_plus) {
-                left: 33rem;
+                left: 33rem !important;
                 opacity: .9;
             }
+
 
             @include respond(phone) {
                 left: 29rem;
@@ -28,8 +38,24 @@
                 
             }
 
+            @include respond(pixel2_xl) {
+                left: 32rem !important;
+            }
+
+            @include respond(iPhoneX) {
+                left: 29rem !important;
+            }
+
+            @include respond(iPhone_6_7_8) {
+                left: 29rem !important;
+            }
+
+            @include respond(galaxyS5) {
+                left: 27rem !important;
+            }
+
             @include respond(iPhone_5_se) {
-                left: 25rem;
+                left: 23rem !important;
             }
         
             &__paragraph {
@@ -42,15 +68,25 @@
                 text-align: center;
                 height: 4.5rem;
 
+                @include respond(iPad) {
+                    width: 12rem;
+                    font-size: 2.7rem;
+                    padding-top: 1.5rem;
+                    height: 8.5rem;
+                }
+
                 @include respond(iPhone6_7_8_plus) {
-                    width: 7.2rem;
-                    height: 6rem;
-                    padding-top: 1rem;
+                    width: 7.2rem !important;
+                    height: 6rem !important;
+                    padding-top: 1rem !important;
+                    font-size: 1.4rem !important;
                 }
 
                 @include respond(phone) {
                     width: 6rem;
+                    font-size: 1.4rem !important;
                 }
+
             }
         
             &__hamburger-menu {
@@ -60,14 +96,21 @@
                 // clip-path: polygon(50% 0%, 100% 0, 100% 21%, 51% 41%, 0 22%, 0 0);
                 clip-path: polygon(50% 0%, 100% 0, 100% 19%, 50% 39%, 0 19%, 0 0);
 
+                @include respond(iPad) {
+                    width: 11.9rem;
+                    height: 14vh !important;
+                }
+
                 @include respond(iPhone6_7_8_plus) {
                     width: 9rem;
                     clip-path: polygon(0 0, 80% 0, 80% 50%, 40% 89%, 0 50%,0 0);
+                    height: 100% !important;
                 }
 
                 @include respond(phone) {
-                    width: 7.7rem;
+                    width: 9rem !important;
                     clip-path: polygon(0 0, 77% 0, 80% 50%, 40% 89%, 0 50%,0 0);
+                    height: 100% !important;
                 }
         
                 &__line {
@@ -80,15 +123,33 @@
                     background: #fff;
                     z-index: 1;
 
+                    @include respond(iPad) {
+                        margin-left: 3.3rem;
+                        width: 50px;
+                        margin-top: -1.6rem;
+                    }
+
                     @include respond(iPhone6_7_8_plus) {
                         margin-left: 2.2rem;
                         margin-top: -2rem;
+                        width: 30px !important;
                     }
 
+                
                     @include respond(phone) {
-                        margin-left: 1.5rem;
-
+                        margin-left: 1.6rem !important;
+                        width: 30px !important;
                     }
+
+                    @include respond(iPhone_6_7_8) {
+                        margin-left: 2.1rem !important;
+                    }
+
+                    @include respond(iPhoneX) {
+                        margin-left: 2rem !important;
+                    }
+
+
                 }
             }
         }
