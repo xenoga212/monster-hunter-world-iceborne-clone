@@ -14,7 +14,7 @@
             right: 0;
             width: 20vw;
             height: 8vw;
-            left: 131rem;
+            left: 177rem;
             top: 0;
 
             @include respond(iPadPro) {
@@ -31,11 +31,9 @@
                 opacity: .9;
             }
 
-
             @include respond(phone) {
                 left: 29rem;
-                opacity: .9;
-                
+                opacity: .9; 
             }
 
             @include respond(pixel2_xl) {
@@ -47,15 +45,15 @@
             }
 
             @include respond(iPhone_6_7_8) {
-                left: 29rem !important;
+                left: 32rem !important;
             }
 
             @include respond(galaxyS5) {
-                left: 27rem !important;
+                left: 29.5rem !important;
             }
 
             @include respond(iPhone_5_se) {
-                left: 23rem !important;
+                left: 26rem !important;
             }
         
             &__paragraph {
@@ -93,7 +91,6 @@
                 width: 7.9rem;
                 height: 100%;
                 background-color: #225875;
-                // clip-path: polygon(50% 0%, 100% 0, 100% 21%, 51% 41%, 0 22%, 0 0);
                 clip-path: polygon(50% 0%, 100% 0, 100% 19%, 50% 39%, 0 19%, 0 0);
 
                 @include respond(iPad) {
@@ -148,8 +145,6 @@
                     @include respond(iPhoneX) {
                         margin-left: 2rem !important;
                     }
-
-
                 }
             }
         }
